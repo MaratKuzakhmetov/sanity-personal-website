@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'globalSettings',
@@ -72,14 +72,6 @@ export default defineType({
                   name: 'platform',
                   title: 'Platform',
                   type: 'string',
-                  options: {
-                    list: [
-                      { title: 'Twitter', value: 'twitter' },
-                      { title: 'LinkedIn', value: 'linkedin' },
-                      { title: 'GitHub', value: 'github' },
-                      { title: 'Instagram', value: 'instagram' },
-                    ],
-                  },
                 },
                 {
                   name: 'url',
@@ -98,4 +90,4 @@ export default defineType({
       ],
     }),
   ],
-}) 
+})

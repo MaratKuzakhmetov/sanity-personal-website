@@ -1,10 +1,15 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'mainSettings',
-  title: 'Main Settings',
+  name: 'mainPage',
+  title: 'Main Page',
   type: 'document',
   fields: [
+    defineField({
+      name: 'mainTitle',
+      title: 'Main Title',
+      type: 'string',
+    }),
     defineField({
       name: 'mainText',
       title: 'Main Text',

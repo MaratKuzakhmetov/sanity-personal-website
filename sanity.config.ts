@@ -41,11 +41,9 @@ export default defineConfig({
                         ),
                       // Main Settings document
                       S.listItem()
-                        .title('Main Settings')
+                        .title('Main Page')
                         .child(
-                          S.document()
-                            .schemaType('mainSettings')
-                            .documentId(`mainSettings-${lang.id}`),
+                          S.document().schemaType('mainPage').documentId(`mainPage-${lang.id}`),
                         ),
                       // Content section
                       S.listItem()
