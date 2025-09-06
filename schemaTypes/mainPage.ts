@@ -21,7 +21,7 @@ export default defineType({
     defineField({
       name: 'mainText',
       title: 'Main Text',
-      type: 'text',
+      type: 'blockContent',
     }),
     defineField({
       name: 'contentBlocks',
