@@ -4,6 +4,14 @@ export default defineType({
   name: 'globalSettings',
   title: 'Global Settings',
   type: 'document',
+  preview: {
+    select: {},
+    prepare() {
+      return {
+        title: 'Global Settings',
+      }
+    },
+  },
   fields: [
     defineField({
       name: 'header',

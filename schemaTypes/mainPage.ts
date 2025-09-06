@@ -4,6 +4,14 @@ export default defineType({
   name: 'mainPage',
   title: 'Main Page',
   type: 'document',
+  preview: {
+    select: {},
+    prepare() {
+      return {
+        title: 'Main Page',
+      }
+    },
+  },
   fields: [
     defineField({
       name: 'mainTitle',
