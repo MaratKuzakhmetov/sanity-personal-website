@@ -88,14 +88,6 @@ yarn dev
 - `npm run deploy` - Deploy to Sanity
 - `npm run deploy-graphql` - Deploy GraphQL API
 
-## Configuration
-
-The project is configured with:
-
-- **Project ID**: `srmsnwov`
-- **Dataset**: `production`
-- **Languages**: English (en), Russian (ru), German (de)
-
 ### Custom Color Palette
 
 The project includes a custom color input plugin with predefined colors:
