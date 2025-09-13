@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
+import {simplerColorInput} from 'sanity-plugin-simpler-color-input'
 
 const languages = [
   {id: 'en', title: 'English'},
@@ -17,6 +18,19 @@ export default defineConfig({
   dataset: 'production',
 
   plugins: [
+    simplerColorInput({
+      // Note: These are all optional
+      defaultColorFormat: 'rgba',
+      defaultColorList: [
+        {label: 'Light', value: '#ffffff'},
+        {label: 'Dark', value: '#333333'},
+        {label: 'Brand', value: '#ca786d'},
+        {label: 'Accent', value: '#626754'},
+        {label: 'Custom...', value: 'custom'},
+      ],
+      enableSearch: true,
+      showColorValue: true,
+    }),
     structureTool({
       structure: (S) =>
         S.list()

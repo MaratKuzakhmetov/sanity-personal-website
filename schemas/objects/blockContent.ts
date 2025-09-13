@@ -19,6 +19,12 @@ export default defineType({
             title: 'Link',
             fields: [{name: 'href', type: 'url', title: 'URL'}],
           },
+          {
+            type: 'textColor',
+          },
+          {
+            type: 'highlightColor',
+          },
         ],
       },
     },
