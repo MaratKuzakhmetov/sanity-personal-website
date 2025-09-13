@@ -1,4 +1,5 @@
 import {defineType} from 'sanity'
+import {ImageIcon} from '@sanity/icons'
 
 export default defineType({
   name: 'blockContent',
@@ -19,14 +20,23 @@ export default defineType({
             title: 'Link',
             fields: [{name: 'href', type: 'url', title: 'URL'}],
           },
-          {
-            type: 'textColor',
-          },
-          {
-            type: 'highlightColor',
-          },
+          {type: 'textColor'},
+          {type: 'highlightColor'},
         ],
       },
+    },
+    {
+      type: 'image',
+      icon: ImageIcon,
+      options: {hotspot: true},
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alt text',
+          options: {isHighlighted: true},
+        },
+      ],
     },
   ],
 })
