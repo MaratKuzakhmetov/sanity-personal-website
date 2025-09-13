@@ -147,11 +147,3 @@ npm run deploy
 ## License
 
 This project is private and unlicensed.
-
-## Support
-
-For questions and support:
-
-- [Sanity Documentation](https://www.sanity.io/docs)
-- [Sanity Community Slack](https://slack.sanity.io/)
-- [Sanity Plugin Directory](https://www.sanity.io/plugins)
